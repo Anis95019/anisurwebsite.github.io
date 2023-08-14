@@ -1,0 +1,441 @@
+*{
+ 
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+.btn
+{
+    border: none;
+    background-color: rgb(89, 89, 226);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    transition: 0.2s;
+    
+}
+.btn:hover{
+    background-color: rgb(50, 163, 167);
+}
+.buton_C{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Satisfy',cursive;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.dotted-hr
+{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+.navber
+{
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+   width: 100%;
+}
+.navber::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.nav-heading h1
+{
+    color: white;
+    padding-top: 10px;
+    margin: 0;
+}
+.navber-menu
+{
+    display: flex;
+    flex-direction: column;
+}
+.navber-menu a{
+    background-color: aqua;
+    margin: 7px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.navber-menu a:hover{
+    background-color: gray;
+}
+/* navber end */
+/* profile start */
+.profile
+{
+    text-align: center;
+    padding: 150px 10px;
+    position: relative;
+}
+.profile .top-weather-icon
+{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: transform 2s;
+}
+.profile .top-weather-icon:hover
+{
+   transform: rotate(360deg);
+}
+.profile .bottom-weather-icon
+{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    transition: transform 2s;
+}
+.profile .bottom-weather-icon:hover
+{
+   transform: rotate(360deg);
+}
+.profile-decs h1
+{
+    font-family: 'Satisfy',cursive;
+    font-size: 3rem;
+}
+.profile-decs p{
+    width: 85%;
+    color: gray;
+    margin: 0px auto 20px auto;
+    text-align: center;
+}
+.profile::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* profile End */
+/* about me strat */
+.about-me
+{
+    background-color: #39a4ac;
+    color: white;
+    padding: 1% 7%;
+    text-align: center;
+}
+.my_image img
+{
+    border: 5px solid white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.about-me::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+.about-me-desc p{
+    text-align: center;
+    
+}
+.download_cv
+{
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.download_cv:hover
+{
+    background-color: rgb(55, 0, 255);
+    color: white;
+}
+/* .about-me end  */
+
+/* profational expriance card start */
+
+.profetional-expariacne
+{
+    padding: 1% 0%;
+    width: 80%;
+    margin: 0 auto;
+}
+.card{
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    height: 750px;
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.63);
+}
+
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 90px;
+}
+.rotate_icon{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.card-title h2
+{
+    background-color: #616161;
+    padding: 10px;
+    color: white;
+}
+.card-decs ol li{
+    color:white;
+    padding: 5px;
+    font-size: 1rem;
+}
+.card-decs ol li strong{
+    font-size: 1.1rem;
+}
+
+
+
+.profetional-expariacne::after
+{
+   content: '';
+   display: table;
+   clear: both;
+}
+.skils-container{
+    padding-right: 45px;
+}
+.skils-container li{
+    margin: 33px 10px;
+    font-weight: bolder;
+    list-style-type: none;
+    position: relative;
+    color: white;
+}
+.skils-container li::before{
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color:rgb(86, 86, 153,.6);
+    border-radius: 1000px;
+}
+.skils-container li::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color:rgb(45, 45, 190);
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.skils-container li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+   to{
+    width: 90%;
+   }
+}
+.skils-container li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+   to{
+    width: 85%;
+   }
+}
+.skils-container li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+   to{
+    width: 70%;
+   }
+}
+.skils-container li.tailwind::after{
+    animation-name: tailwind;
+}
+@keyframes tailwind {
+   to{
+    width: 75%;
+   }
+}
+.skils-container li.react::after{
+    animation-name: react;
+}
+@keyframes react {
+   to{
+    width: 75%;
+   }
+}
+.skils-container li.node-js::after{
+    animation-name: node-js;
+}
+@keyframes node-js {
+   to{
+    width: 55%;
+   }
+}
+.skils-container li.exprase::after{
+    animation-name: exprase;
+}
+@keyframes exprase {
+   to{
+    width: 65%;
+   }
+}
+.skils-container li.mongodb::after{
+    animation-name: mongodb;
+}
+@keyframes mongodb {
+   to{
+    width: 75%;
+   }
+}
+/* profational expriance card Ends */
+
+/* achivement contact start */
+.achivementr_contact
+{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+}
+.contact
+{
+    text-align: center;
+    padding: 1% 5%;
+}
+
+.contact input, textarea{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+.contact button{
+    width: 100px;
+    background-color: fuchsia;
+    color: white;
+    padding: 12px;
+    margin: 17px 12px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    transition: .3;
+}
+.contact button:hover{
+    background-color: deepskyblue;
+}
+.contact_links{
+    text-align: center;
+
+}
+.scial_btn{
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .2s;
+}
+#tiktok_btn{
+    background-color: black;
+    
+}
+
+.scial_btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.achivementr_contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* achivement contact ends */
+/* footer section start */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer_menu a{
+    display: block;
+    background-color: rgb(63, 124, 105);
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin: 15px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: .2s;
+}
+.footer_menu a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+/* footer section :ends */
